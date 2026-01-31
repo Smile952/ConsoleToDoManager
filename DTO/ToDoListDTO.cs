@@ -1,13 +1,12 @@
 ﻿using System.Text.Json.Serialization;
-using TUIToDo.Models;
 
-namespace TUIToDo
+namespace TUIToDo.DTO
 {
     public class ToDoListDTO
     {
         public int Id { get; set; }
         public string Title { get; set; }
         [JsonPropertyName("Items")]
-        public List<ToDoItem> ToDoItems { get; set; }
+        public List<ToDoItemDTO> ToDoItems { get; set; }
     }
 }
